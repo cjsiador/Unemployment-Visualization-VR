@@ -1,0 +1,28 @@
+{
+    "UnemploymentData": [
+        {
+            "Year":1976,
+            "State":"Alabama",
+            "FIPS_Code":1.0,
+            "Total_Civilian_Non-Institutional_Population_in_State":2632667,
+            "Total Civilian Labor Force in State":1500260,
+            "Percent (%) of State's Population":57.0,
+            "Total Employment in State":1399782,
+            "Percent (%) of Labor Force Employed in State":53.2,
+            "Total Unemployment in State":100478,
+            "Percent (%) of Labor Force Unemployed in State":6.7
+        },
+        {
+            "Year":1976,
+            "State":"Alaska",
+            "FIPS_Code":2.0,
+            "Total_Civilian_Non-Institutional_Population_in_State":239917,
+            "Total Civilian Labor Force in State":164279,
+            "Percent (%) of State's Population":68.5,
+            "Total Employment in State":151833,
+            "Percent (%) of Labor Force Employed in State":63.3,
+            "Total Unemployment in State":12446,
+            "Percent (%) of Labor Force Unemployed in State":7.6
+        }
+    ]
+}

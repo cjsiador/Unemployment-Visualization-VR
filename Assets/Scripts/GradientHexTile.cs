@@ -2,43 +2,82 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GradientHexTile : MonoBehaviour
 {
-    public GameObject hexTileObj;
-    public float percentage;
+    public float timerDuration = 2.5f;
 
-    float timer = 0;
-    public float timerDuration = 15f;
-
-    // Start is called before the first frame update
-    void Update()
+    private float _percentage;
+    public float Percentage
     {
-        timer += Time.deltaTime;
+        get => _percentage;
+        set
+        {
+            if (Mathf.Approximately(_percentage, value)) return;
 
-        float normalizedTime = Mathf.Clamp01(timer/timerDuration);
+            OnPercentageChanged();
+            _percentage = value;
+        }
+    }
 
-        var gradient = new Gradient();
+    private bool isGradientUpdating = false;
+    private float previousPercentage = 0;
+    private float timer = 0;
+    private Gradient gradient;
+    private Coroutine gradientCoroutine;
 
-        // Blend color from white 0% to blue 100%
+    void Awake()
+    {
+        InitializeGradient();
+    }
+
+    void InitializeGradient()
+    {
+        gradient = new Gradient();
+
         var colors = new GradientColorKey[2];
+        colors[0] = new GradientColorKey(new Color32(247, 253, 173, 255), 0.5f);
+        colors[1] = new GradientColorKey(new Color32(3, 81, 116, 255), 0.75f);
 
-        Color32 colorYellow = new Color32(247,253,173,255);
-        Color32 colorBlue = new Color32(3,81,116,255);
-
-        colors[0] = new GradientColorKey(colorYellow, 0.0f);
-        colors[1] = new GradientColorKey(colorBlue, 1.0f);
-
-        // Blend alpha from opaque at 0% to transparent at 100%
         var alphas = new GradientAlphaKey[2];
         alphas[0] = new GradientAlphaKey(1.0f, 0.0f);
         alphas[1] = new GradientAlphaKey(1.0f, 1.0f);
 
         gradient.SetKeys(colors, alphas);
+    }
 
-        Color gradientColor = gradient.Evaluate((percentage * normalizedTime));
+    private void OnPercentageChanged()
+    {
+        if (gradientCoroutine != null)
+        {
+            StopCoroutine(gradientCoroutine);
+        }
 
-        var hexTileRenderer = hexTileObj.GetComponent<Renderer>().material;
+        timer = 0;
+        previousPercentage = _percentage; // Store current percentage for lerping
 
-        hexTileRenderer.color = gradientColor;
+        isGradientUpdating = true;
+        gradientCoroutine = StartCoroutine(GradientUpdate());
+    }
+
+    IEnumerator GradientUpdate()
+    {
+        while (timer < timerDuration)
+        {
+            timer += Time.deltaTime;
+            float normalizedTime = Mathf.Clamp01(timer / timerDuration);
+            Debug.Log(normalizedTime);
+            float currentLerpValue = Mathf.Lerp(previousPercentage, _percentage, normalizedTime);
+
+            Debug.Log("The current lerp value is: " + currentLerpValue);
+
+            Color gradientColor = gradient.Evaluate(currentLerpValue / 100);
+            GetComponent<Renderer>().material.color = gradientColor;
+
+            yield return null;
+        }
+
+        isGradientUpdating = false;
+        gradientCoroutine = null; // Mark coroutine as finished
     }
 }
