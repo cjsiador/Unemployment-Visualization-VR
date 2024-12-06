@@ -6,15 +6,25 @@ public class IndicatorSelector : MonoBehaviour
 {
     public float minDegree;
     public float maxDegree;
-
-    public Vector3 minRotation;
-    public Vector3 maxRotation;
-
     public int numberOfObjects;
     public float angleStep;
 
     public GameObject rotationDial;
-    public Vector3 rotationAngle;
+    public Vector3 currentAngle;
+
+    public float minYAxis;
+    public float maxYAxis;
+    public float rangeDegree;
+
+    public float currentIndicator;
+
+    public float indicatorStep;
+
+    public Vector3 currentRotation;
+    public float indicatorStepPercent;
+
+    public float minYear;
+    public float currentYear;
 
     void Start()
     {
@@ -23,24 +33,58 @@ public class IndicatorSelector : MonoBehaviour
 
     void Update()
     {
-        Vector3 currentRotation = rotationDial.transform.localEulerAngles;
+        currentRotation = rotationDial.transform.localEulerAngles;
 
-        // Clamp each axis
-        // currentRotation.x = ClampAngle(currentRotation.x, minRotation);
+        currentAngle.x = NormalizeAngle(currentRotation.x);
+        currentAngle.y = NormalizeAngle(currentRotation.y);
+        currentAngle.z = NormalizeAngle(currentRotation.z);
 
-        rotationAngle = rotationDial.transform.localEulerAngles;
-        // rotationDial.transform.localEulerAngles 
+        currentAngle.z = Mathf.Clamp(currentAngle.z, 0, rangeDegree);
+
+        indicatorStep = currentAngle.z / angleStep;
+        indicatorStepPercent = (currentAngle.z % angleStep) / angleStep;
+        currentIndicator = Mathf.Round(indicatorStep);
+        currentYear = minYear + currentIndicator;
     }
 
-    // private float ClampAngle(float angle, float min, float max)
-    // {
-    //     // Normalize the angle to the range 
-    //     angle = angle % 360;
-    // }
+    float NormalizeAngle(float angle)
+    {
+        angle %= 360f; // Ensure the angle is within -360 to 360
+
+        float tempMinDegree = angle;
+        float tempMaxDegree = angle;
+
+        float normalizedAngle = 0;
+
+        if(minDegree < 0)
+        {
+            tempMinDegree = 360 - Mathf.Abs(minDegree);
+        }
+
+        if(maxDegree < 0)
+        {
+            tempMaxDegree = 360 - Mathf.Abs(maxDegree);
+        }
+
+        if ((angle >= tempMinDegree - 30) && (angle < 360))
+        {
+            angle -= tempMinDegree;
+            return angle;
+        }
+
+        if ((angle >= 0) && (angle <= maxDegree + 30))
+        {
+            angle += (360 - Mathf.Abs(tempMinDegree));
+            return angle;
+        }
+
+        return angle;
+    }
 
     void SelectIndicatorYear()
     {
         // Calculate the step size for even distribution
         angleStep = (maxDegree - minDegree) / (numberOfObjects - 1);
+        rangeDegree = maxYAxis - minYAxis;
     }
 }

@@ -20,7 +20,6 @@ public class GradientHexTile : MonoBehaviour
         }
     }
 
-    private bool isGradientUpdating = false;
     private float previousPercentage = 0;
     private float timer = 0;
     private Gradient gradient;
@@ -56,7 +55,6 @@ public class GradientHexTile : MonoBehaviour
         timer = 0;
         previousPercentage = _percentage; // Store current percentage for lerping
 
-        isGradientUpdating = true;
         gradientCoroutine = StartCoroutine(GradientUpdate());
     }
 
@@ -66,10 +64,7 @@ public class GradientHexTile : MonoBehaviour
         {
             timer += Time.deltaTime;
             float normalizedTime = Mathf.Clamp01(timer / timerDuration);
-            Debug.Log(normalizedTime);
             float currentLerpValue = Mathf.Lerp(previousPercentage, _percentage, normalizedTime);
-
-            Debug.Log("The current lerp value is: " + currentLerpValue);
 
             Color gradientColor = gradient.Evaluate(currentLerpValue / 100);
             GetComponent<Renderer>().material.color = gradientColor;
@@ -77,7 +72,6 @@ public class GradientHexTile : MonoBehaviour
             yield return null;
         }
 
-        isGradientUpdating = false;
         gradientCoroutine = null; // Mark coroutine as finished
     }
 }

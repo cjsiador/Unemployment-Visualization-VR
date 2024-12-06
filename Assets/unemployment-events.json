@@ -1,0 +1,286 @@
+{
+  "data": [
+    {
+      "year": 1976,
+      "rate": 7.8,
+      "event": "Economic expansion began but \"stagflation\" persisted. Election year focused on economic challenges.",
+      "source": "https://www.investopedia.com/articles/economics/08/1970-stagflation.asp"
+    },
+    {
+      "year": 1977,
+      "rate": 6.4,
+      "event": "Carter took office facing continued economic challenges. Energy crisis remained a major concern.",
+      "source": "https://history.state.gov/milestones/1977-1980/foreword"
+    },
+    {
+      "year": 1978,
+      "rate": 6.0,
+      "event": "Federal Reserve raised rates dramatically to fight inflation, reaching 20%. Airline industry deregulated.",
+      "source": "https://www.econlib.org/library/Enc/AirlineDeregulation.html"
+    },
+    {
+      "year": 1979,
+      "rate": 6.0,
+      "event": "Second oil crisis hit economy. Federal Reserve under Volcker began aggressive anti-inflation policy.",
+      "source": "https://www.federalreservehistory.org/essays/anti-inflation-measures"
+    },
+    {
+      "year": 1980,
+      "rate": 7.2,
+      "event": "Recession began as anti-inflation measures took effect. Carter-Reagan election focused on economy.",
+      "source": "https://www.investopedia.com/terms/r/reaganomics.asp"
+    },
+    {
+      "year": 1981,
+      "rate": 8.5,
+      "event": "Reagan took office implementing supply-side economics. Tax cuts passed. Minimum wage raised to $3.35.",
+      "source": "https://www.reaganfoundation.org/ronald-reagan/the-presidency/economic-policy/"
+    },
+    {
+      "year": 1982,
+      "rate": 10.8,
+      "event": "Severe recession continued. Job Training Partnership Act passed to address unemployment. Garn-St. Germain Act deregulated savings and loans.",
+      "source": "https://www.federalreservehistory.org/essays/recession-of-1981-82"
+    },
+    {
+      "year": 1983,
+      "rate": 8.3,
+      "event": "Reagan increased military spending significantly as part of Cold War strategy. Recovery began but unemployment remained high.",
+      "source": "https://www.investopedia.com/terms/r/reaganomics.asp"
+    },
+    {
+      "year": 1984,
+      "rate": 7.3,
+      "event": "Strong recovery continued with \"Morning in America\" campaign theme. Fed maintained anti-inflation stance.",
+      "source": "https://www.bankrate.com/banking/federal-reserve/history-of-federal-funds-rate/"
+    },
+    {
+      "year": 1985,
+      "rate": 7.0,
+      "event": "Economic expansion continued with falling inflation. Plaza Accord addressed international currency imbalances.",
+      "source": "https://www.investopedia.com/terms/p/plaza-accord.asp"
+    },
+    {
+      "year": 1986,
+      "rate": 6.6,
+      "event": "Tax reform simplified code and lowered rates. Oil prices collapsed affecting energy sector.",
+      "source": "https://www.investopedia.com/terms/t/taxreformact1986.asp"
+    },
+    {
+      "year": 1987,
+      "rate": 5.7,
+      "event": "Black Monday stock market crash rattled financial markets but had limited economic impact.",
+      "source": "https://www.investopedia.com/terms/b/blackmonday.asp"
+    },
+    {
+      "year": 1988,
+      "rate": 5.3,
+      "event": "Federal Reserve raised rates to prevent inflation as economy strengthened.",
+      "source": "https://www.weforum.org/stories/2022/10/comparing-the-speed-of-u-s-interest-rate-hikes-1988-2022/"
+    },
+    {
+      "year": 1989,
+      "rate": 5.4,
+      "event": "George H.W. Bush took office. Savings and Loan Crisis reforms implemented to address financial sector problems.",
+      "source": "https://www.investopedia.com/terms/s/sl-crisis.asp"
+    },
+    {
+      "year": 1990,
+      "rate": 6.3,
+      "event": "Recession began. Gulf War preparations began affecting oil markets and economy.",
+      "source": "https://www.investopedia.com/articles/economics/08/past-recessions.asp"
+    },
+    {
+      "year": 1991,
+      "rate": 7.3,
+      "event": "Operation Desert Storm launched. Minimum wage raised to $4.25. Soviet Union dissolved affecting global markets.",
+      "source": "https://www.investopedia.com/articles/economics/08/past-recessions.asp"
+    },
+    {
+      "year": 1992,
+      "rate": 7.4,
+      "event": "NAFTA negotiations completed but not yet implemented. Recovery remained slow with \"jobless recovery\" concerns.",
+      "source": "https://www.brookings.edu/articles/retrospective-on-american-economic-policy-in-the-1990s/"
+    },
+    {
+      "year": 1993,
+      "rate": 6.5,
+      "event": "Clinton took office. Omnibus Budget Reconciliation Act raised taxes and cut spending to reduce deficit.",
+      "source": "https://www.investopedia.com/terms/t/tax-reform-act-of-1993.asp"
+    },
+    {
+      "year": 1994,
+      "rate": 5.5,
+      "event": "School to Work Act passed to address skills gap. Fed began raising rates to prevent inflation.",
+      "source": "https://www.edutopia.org/four-reports-look-back-school-work-movement"
+    },
+    {
+      "year": 1995,
+      "rate": 5.6,
+      "event": "Economic expansion gained momentum. Technology sector began dramatic growth.",
+      "source": "https://www.imf.org/external/np/exr/ib/2008/053008.htm"
+    },
+    {
+      "year": 1996,
+      "rate": 5.4,
+      "event": "Welfare reform fundamentally changed social safety net. Economy strengthened further.",
+      "source": "https://www.brookings.edu/articles/welfare-reform-and-the-work-support-system/"
+    },
+    {
+      "year": 1997,
+      "rate": 4.7,
+      "event": "Minimum wage raised to $5.85. Asian financial crisis began but had limited U.S. impact.",
+      "source": "https://www.investopedia.com/terms/a/asian-financial-crisis.asp"
+    },
+    {
+      "year": 1998,
+      "rate": 4.4,
+      "event": "Long-Term Capital Management crisis threatened financial markets but was contained.",
+      "source": "https://www.pbs.org/wgbh/pages/frontline/warning/themes/ltcm.html"
+    },
+    {
+      "year": 1999,
+      "rate": 4.0,
+      "event": "Euro introduced affecting global markets. Tech boom accelerated. Kosovo conflict created uncertainty.",
+      "source": "https://www.history.com/this-day-in-history/the-euro-debuts"
+    },
+    {
+      "year": 2000,
+      "rate": 3.9,
+      "event": "Nasdaq reached record high before tech bubble burst. Presidential election created uncertainty.",
+      "source": "https://www.investopedia.com/what-2000-tech-bubble-tells-us-about-the-stock-market-today-8684561"
+    },
+    {
+      "year": 2001,
+      "rate": 5.7,
+      "event": "George W. Bush took office and implemented tax cuts. 9/11 attacks dramatically impacted economy.",
+      "source": "https://www.cbpp.org/research/the-legacy-of-the-2001-and-2003-bush-tax-cuts"
+    },
+    {
+      "year": 2002,
+      "rate": 6.0,
+      "event": "War on Terror began affecting government spending and economic confidence. Corporate scandals (Enron, WorldCom) shook markets.",
+      "source": "https://www.investopedia.com/updates/enron-scandal-summary/"
+    },
+    {
+      "year": 2003,
+      "rate": 5.7,
+      "event": "Jobs and Growth Tax Relief Reconciliation Act passed to stimulate economy. Iraq War began.",
+      "source": "https://www.investopedia.com/terms/j/jgtrra.asp"
+    },
+    {
+      "year": 2004,
+      "rate": 5.4,
+      "event": "Economic expansion strengthened. Housing boom accelerated.",
+      "source": "https://www.federalreserve.gov/boarddocs/hh/2004/february/ReportSection2.htm"
+    },
+    {
+      "year": 2005,
+      "rate": 4.9,
+      "event": "Bankruptcy law reformed. Hurricane Katrina caused massive economic damage to Gulf Coast.",
+      "source": "https://www.aeaweb.org/articles?id=10.1257/app.20160307"
+    },
+    {
+      "year": 2006,
+      "rate": 4.4,
+      "event": "Housing market peaked before beginning historic decline. Economic expansion continued.",
+      "source": "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath"
+    },
+    {
+      "year": 2007,
+      "rate": 5.0,
+      "event": "Financial crisis began with subprime mortgage collapse. Housing decline accelerated.",
+      "source": "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath"
+    },
+    {
+      "year": 2008,
+      "rate": 7.3,
+      "event": "Financial crisis peaked. Minimum wage raised to $6.55. Major financial institutions failed or required rescue.",
+      "source": "https://www.dol.gov/agencies/whd/minimum-wage/history/chart"
+    },
+    {
+      "year": 2009,
+      "rate": 9.9,
+      "event": "Obama took office implementing stimulus package. Minimum wage raised to $7.25. Auto industry bailout. Extended jobless benefits.",
+      "source": "https://obamawhitehouse.archives.gov/the-record/economy"
+    },
+    {
+      "year": 2010,
+      "rate": 9.3,
+      "event": "Obama tax cuts implemented to support recovery. Dodd-Frank Act reformed financial sector.",
+      "source": "https://www.investopedia.com/terms/d/dodd-frank-financial-regulatory-reform-bill.asp"
+    },
+    {
+      "year": 2011,
+      "rate": 8.5,
+      "event": "Extended period of job losses reached 26 months. Debt ceiling crisis created market uncertainty. Iraq War ended.",
+      "source": "https://www.tutor2u.net/economics/blog/2011-in-review-the-us-economy"
+    },
+    {
+      "year": 2012,
+      "rate": 7.9,
+      "event": "Quantitative easing continued. Ten-year rates hit 200-year low. Fiscal cliff crisis created uncertainty.",
+      "source": "https://www.thebalancemoney.com/u-s-economy-2012-3305742"
+    },
+    {
+      "year": 2013,
+      "rate": 6.7,
+      "event": "Stock market gained 30% as recovery strengthened. Federal Reserve continued accommodative policy.",
+      "source": "https://www.forbes.com/sites/maggiemcgrath/2013/12/31/markets-finish-2013-with-record-highs/"
+    },
+    {
+      "year": 2014,
+      "rate": 5.6,
+      "event": "Unemployment finally returned to pre-crisis levels. Oil prices declined sharply.",
+      "source": "https://blogs.worldbank.org/en/developmenttalk/what-triggered-oil-price-plunge-2014-2016-and-why-it-failed-deliver-economic-impetus-eight-charts"
+    },
+    {
+      "year": 2015,
+      "rate": 5.0,
+      "event": "Economy reached \"natural\" unemployment rate. Fed began normalizing monetary policy.",
+      "source": "https://www.frbsf.org/research-and-insights/publications/economic-letter/2015/12/dancing-days-are-here-again-the-long-road-back-to-maximum-employment-speech/"
+    },
+    {
+      "year": 2016,
+      "rate": 4.7,
+      "event": "Presidential election created market volatility. Brexit vote affected global markets.",
+      "source": "https://www.nyse.com/article/market-volatility-election"
+    },
+    {
+      "year": 2017,
+      "rate": 4.1,
+      "event": "Trump took office. Dollar weakened boosting exports. Tax cut legislation passed.",
+      "source": "https://www.americanprogress.org/article/trumps-corporate-tax-cut-not-trickling/"
+    },
+    {
+      "year": 2018,
+      "rate": 3.9,
+      "event": "Trump tax cuts implemented. Trade tensions increased with China and other partners.",
+      "source": "https://www.imf.org/en/Blogs/Articles/2019/05/23/blog-the-impact-of-us-china-trade-tensions"
+    },
+    {
+      "year": 2019,
+      "rate": 3.6,
+      "event": "\"Goldilocks\" economy with low unemployment and inflation. Trade tensions continued.",
+      "source": "https://www.mariettawealth.com/fourth-quarter-2019-review-outlook/"
+    },
+    {
+      "year": 2020,
+      "rate": 6.7,
+      "event": "COVID-19 pandemic caused severe recession. Massive government stimulus implemented.",
+      "source": "https://www.whitehouse.gov/wp-content/uploads/2022/04/Chapter-3-new.pdf"
+    },
+    {
+      "year": 2021,
+      "rate": 3.9,
+      "event": "Pandemic recovery continued. Biden took office implementing additional stimulus. Supply chain issues emerged.",
+      "source": "https://home.treasury.gov/news/press-releases/jy0645"
+    },
+    {
+      "year": 2022,
+      "rate": 3.5,
+      "event": "Strong recovery continued. Federal Reserve aggressively raised rates to fight inflation.",
+      "source": "https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-tapering-asset-purchases.html"
+    }
+  ]
+}
