@@ -24,6 +24,7 @@ public class GradientHexTile : MonoBehaviour
     private float timer = 0;
     private Gradient gradient;
     private Coroutine gradientCoroutine;
+    private float currentLerpValue;
 
     void Awake()
     {
@@ -35,8 +36,8 @@ public class GradientHexTile : MonoBehaviour
         gradient = new Gradient();
 
         var colors = new GradientColorKey[2];
-        colors[0] = new GradientColorKey(new Color32(247, 253, 173, 255), 0.5f);
-        colors[1] = new GradientColorKey(new Color32(3, 81, 116, 255), 0.75f);
+        colors[0] = new GradientColorKey(new Color32(247, 253, 173, 255), 0.00f);
+        colors[1] = new GradientColorKey(new Color32(3, 81, 116, 255), 0.11f);
 
         var alphas = new GradientAlphaKey[2];
         alphas[0] = new GradientAlphaKey(1.0f, 0.0f);
@@ -53,18 +54,18 @@ public class GradientHexTile : MonoBehaviour
         }
 
         timer = 0;
-        previousPercentage = _percentage; // Store current percentage for lerping
+        previousPercentage = currentLerpValue; // Store current percentage for lerping
 
         gradientCoroutine = StartCoroutine(GradientUpdate());
     }
 
     IEnumerator GradientUpdate()
-    {
+    {        
         while (timer < timerDuration)
         {
             timer += Time.deltaTime;
             float normalizedTime = Mathf.Clamp01(timer / timerDuration);
-            float currentLerpValue = Mathf.Lerp(previousPercentage, _percentage, normalizedTime);
+            currentLerpValue = Mathf.Lerp(previousPercentage, _percentage, normalizedTime);
 
             Color gradientColor = gradient.Evaluate(currentLerpValue / 100);
             GetComponent<Renderer>().material.color = gradientColor;

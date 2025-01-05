@@ -65,17 +65,22 @@ public class HexTileManager : MonoBehaviour
     public void UpdateGradientHex()
     {
         // hexTilePercentage = unemploymentDataFilterScript.GetComponent<UnemploymentDataFilter>().filteredByYear;
+        float percentTotal = 0f;
+
 
         for(int t = 0; t < 51; t++)
         {
-            hexTilePercentage[t] = unemploymentDataFilterScript.filteredByYear[t].Percent_of_State_Population;
+            percentTotal = (unemploymentDataFilterScript.filteredByYear[t].Total_Unemployment_in_State / unemploymentDataFilterScript.filteredByYear[t].Total_Civilian_Labor_Force_in_State) * 100;
+            percentTotal = (float)System.Math.Round(percentTotal, 1);
+
+            hexTilePercentage[t] = percentTotal;
         }
 
         int i = 0;
 
         foreach(var hexTileState in hexTileStates)
         {
-            hexTileState.GetComponent<GradientHexTile>().Percentage = unemploymentDataFilterScript.filteredByYear[i].Percent_of_State_Population;
+            hexTileState.GetComponent<GradientHexTile>().Percentage = hexTilePercentage[i];
             i++; 
         }
     }

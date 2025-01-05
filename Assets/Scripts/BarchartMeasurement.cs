@@ -14,12 +14,12 @@ public class BarchartMeasurement : MonoBehaviour
     public GameObject targetObject;
     public GameObject sourceObject;
     public TMP_Text[] heightDigitText;
+    public int[] heightDigitValue;
     public string valueString;
 
     public GrabInteractable grabInteractable; // TODO: Impliment a grabable.
     private Vector3 initialMeasurementPos;
     private Vector3 initialMeasurementRot;
-
     private float clampedZPos;
 
     void Start()

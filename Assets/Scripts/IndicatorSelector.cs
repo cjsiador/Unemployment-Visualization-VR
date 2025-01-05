@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class IndicatorSelector : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class IndicatorSelector : MonoBehaviour
     public float minYear;
     public float currentYear;
 
+    public TMP_Text yearText;
     void Start()
     {
         SelectIndicatorYear();
@@ -45,6 +47,8 @@ public class IndicatorSelector : MonoBehaviour
         indicatorStepPercent = (currentAngle.z % angleStep) / angleStep;
         currentIndicator = Mathf.Round(indicatorStep);
         currentYear = minYear + currentIndicator;
+
+        yearText.text = currentYear.ToString();
     }
 
     float NormalizeAngle(float angle)
